@@ -12,8 +12,8 @@ The dataset contains job postings with attributes including:
 Source: https://www.kaggle.com/datasets/adilshamim8/salaries-for-data-science-jobs
 
 ## EDA Highlights
-- Most roles are remote-friendly and concentrated in the US.
-- Seniority and company size heavily influence compensation.
+- Most roles are remote-friendly and hybrid roles have the least frequency.
+- The biggest salaries are paid in the US. A large percentage of salaries are paid in the US Dollar.
 - Salaries are right-skewed; standardization was applied.
 
 ## Models Trained
@@ -27,15 +27,14 @@ GridSearchCV was used for hyperparameter tuning with multi-metric scoring (`RMSE
 ## 📈 Best Model Performance
 | Metric | Value |
 |--------|-------|
-| RMSE   | *41,054.24* |
-| R²     | *0.583* |
+| RMSE   | *40,680.54* |
+| R²     | *0.59* |
 
 
 ## Tech Stack
 - Python, Jupyter Notebook  
-- `scikit-learn`, `pandas`, `matplotlib`, `seaborn`
+- `scikit-learn`, `pandas`, `matplotlib`, `seaborn`, `numpy`
 
 ## Future Improvements
- 
-- Try ensembling and boosting models (e.g., XGBoost)  
-- Deploy a web app for live predictions
+- Try gradient boosting models (e.g. XGBoost)  
+- Deploy a web app for live predictions (Streamlit)
